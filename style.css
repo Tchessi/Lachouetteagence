@@ -10,7 +10,7 @@ body {
     font-size: 20px;
     font-family: 'Viaoda Libre',cursive;
     padding: 0px!important;
-    color: #575757!important;
+    color: #000000f1!important;
 }
 .navbar-header a {
     display: flex;
@@ -109,10 +109,12 @@ a:hover {
 
 .d-bloc {
     color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 0.945);
 }
 
 .d-bloc .icon-round,
@@ -658,7 +660,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000f1!important;
 }
 
 .container {
@@ -825,7 +827,7 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-bannierecomp.jpg");
 }
 
 .bg-presentation {
