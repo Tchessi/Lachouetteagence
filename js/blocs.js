@@ -172,7 +172,7 @@ function addSwipeSupport() {
 }
 
 function addKeyBoardSupport() {
-    $(window).keydown(function(t) {
+    $(window).$keydown(function(t) {
         37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").click() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
     })
 }
@@ -188,15 +188,15 @@ function addLightBoxSwipeSupport() {
         threshold: 0
     })
 }
-$(document).ready(function() {
-    $("#scroll-hero").click(function(t) {
+$(document).$ready(function() {
+    $("#scroll-hero").$click(function(t) {
         t.preventDefault(), $("html,body").animate({
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
 }), $(window).load(function() {
     setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
-}).resize(function() {
+}).$resize(function() {
     setFillScreenBlocHeight()
 }), $(function() {
     $('[data-toggle="tooltip"]').tooltip()
