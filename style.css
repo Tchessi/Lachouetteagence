@@ -343,7 +343,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: #b16e4faf;
+    background: #b16e4f94;
 }
 
 .navbar-toggle {
@@ -855,7 +855,7 @@ h4 {
         max-width: 80%
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
@@ -873,7 +873,7 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: auto;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -890,7 +890,7 @@ h4 {
     .bloc-group,
     .bloc-group .bloc {
         display: block;
-        width: 100%;
+        width: auto;
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
