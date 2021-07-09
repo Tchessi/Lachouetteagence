@@ -688,6 +688,12 @@ a {
 p {
     font-size: 15px;
 }
+.tangerine-background {
+    background-color: #d2691ec9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -1049,5 +1055,8 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .bg-banniere {
+        background-image: none;
     }
 }
