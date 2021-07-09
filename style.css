@@ -343,7 +343,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: #B16E4F;
+    background: #d2691ea4;
 }
 
 .navbar-toggle {
