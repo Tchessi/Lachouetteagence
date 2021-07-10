@@ -344,7 +344,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: #d2691ea4;
+    background: #f3976cab;
 }
 
 .navbar-toggle {
@@ -690,7 +690,7 @@ p {
     font-size: 15px;
 }
 .tangerine-background {
-    background-color: #d2691ec9;
+    background-color: #f3976cc7;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
@@ -771,9 +771,10 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.979);
+    background-color: #F3976C;
     padding: 40px 40px 40px 40px;
     border-radius: 15px;
+    position: relative;
 }
 
 .bold-link {
@@ -795,10 +796,11 @@ h4 {
 
 .tc-white {
     color: #FFFFFF!important;
+    position: relative;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #ffffff;
     color: #403b3b!important;
 }
 
@@ -1060,5 +1062,9 @@ h4 {
     }
     .bg-banniere {
         background-image: none;
+    }
+    .texture-paper::before {
+        background: #F3976C;
+
     }
 }
