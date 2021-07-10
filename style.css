@@ -311,6 +311,8 @@ a:hover {
 }
 
 .navbar-brand img {
+    width: 55px;
+    height: 72px;
     margin: 0 5px 0 0;
     display: inline;
 }
