@@ -1432,11 +1432,6 @@ figure {
 img {
     vertical-align: middle
 }
-.image-resize-mode {
-    height: 100px;
-    width: 100px;
-}
-
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
 .img-responsive,
