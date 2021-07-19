@@ -1,6 +1,6 @@
 // Blocs.js Minified
 function setUpSpecialNavs() {
-    $(".navbar-toggle").$click(function(t) {
+    $(".navbar-toggle").click(function(t) {
         var e = $(this).closest("nav"),
             i = e.find("ul.site-navigation"),
             a = i.clone();
@@ -35,9 +35,9 @@ function setUpSpecialNavs() {
 }
 
 function extraNavFuncs() {
-    $(".site-navigation a").$click(function(t) {
+    $(".site-navigation a").click(function(t) {
         $(t.target).closest(".dropdown-toggle").length || $(".navbar-collapse").collapse("hide")
-    }), $("a.dropdown-toggle").$click(function(t) {
+    }), $("a.dropdown-toggle").click(function(t) {
         $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function(t) {
             $(this).hasClass("target-open-menu") || $(this).removeClass("open")
         }), $(".target-open-menu").removeClass("target-open-menu")
@@ -65,7 +65,7 @@ function scrollToTarget(t) {
 }
 
 function animateWhenVisible() {
-    hideAll(), inViewCheck(), $(window).$scroll(function() {
+    hideAll(), inViewCheck(), $(window).scroll(function() {
         inViewCheck(), scrollToTopView(), stickyNavToggle()
     })
 }
@@ -172,8 +172,8 @@ function addSwipeSupport() {
 }
 
 function addKeyBoardSupport() {
-    $(window).$keydown(function(t) {
-        37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").$click() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
+    $(window).keydown(function(t) {
+        37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").click() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
     })
 }
 
@@ -189,14 +189,14 @@ function addLightBoxSwipeSupport() {
     })
 }
 $(document).ready(function() {
-    $("#scroll-hero").$click(function(t) {
+    $("#scroll-hero").click(function(t) {
         t.preventDefault(), $("html,body").animate({
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
 }), $(window).load(function() {
     setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
-}).$resize(function() {
+}).resize(function() {
     setFillScreenBlocHeight()
 }), $(function() {
     $('[data-toggle="tooltip"]').tooltip()
