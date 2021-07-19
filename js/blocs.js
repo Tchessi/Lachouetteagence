@@ -188,8 +188,8 @@ function addLightBoxSwipeSupport() {
         threshold: 0
     })
 }
-$(document).$ready(function() {
-    $("#scroll-hero").$click(function(t) {
+$(document).ready(function() {
+    $("#scroll-hero").click(function(t) {
         t.preventDefault(), $("html,body").animate({
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
