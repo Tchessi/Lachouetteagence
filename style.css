@@ -311,7 +311,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    width: 31px;
+    width: auto;
     height: 40px;
     margin: 0 5px 0 0;
     display: inline;
@@ -1064,7 +1064,7 @@ button.bloc-button {
 
     }
     .navbar-brand img {
-        width: 31px;
+        width: auto;
         height: 40px;
     
     }
